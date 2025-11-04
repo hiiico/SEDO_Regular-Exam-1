@@ -18,9 +18,13 @@ function getRandomQuote() {
     return quotes[randomIndex];
 }
 
+// *** Add comments to displayQuote ***
 function displayQuote() {
+    // Step 1: Get a random quote object from the array
     const quote = getRandomQuote();
+    // Step 2: Set the text content of the quote paragraph
     quoteTextElement.textContent = `"${quote.text}"`; // Add quotes around the text
+    // Step 3: Set the text content of the author paragraph
     quoteAuthorElement.textContent = `- ${quote.author}`;
 }
 
